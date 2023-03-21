@@ -22,7 +22,7 @@ const AboutMe = ({ aboutMe }) => {
         </div>
         <div className='w-full sm:w-[60%] flex flex-col'>
           <div className='flex justify-end'>
-            <hr className='hidden sm:block border-b-2 border-amber-500 w-[85%]   mb-4'></hr>
+            <hr className='hidden sm:block border-b-2 border-amber-500 w-[85%] mb-4'></hr>
           </div>
 
           <div className='w-full'>

@@ -59,7 +59,7 @@ const ProjectDisplay = ({ allProjects }) => {
                 </Link>
               </div>
               <div>
-                <a className='absolute top-0 left-0 h-[390px] w-full z-10 bg-white text-center flex flex-col items-center justify-start py-10 px-4 opacity-0 rounded-xl hover:opacity-100 bg-opacity-95 duration-300'>
+                <a className='absolute top-0 left-0 text-gray-800 h-[390px] w-full z-10 bg-white text-center flex flex-col items-center justify-start py-10 px-4 opacity-0 rounded-xl hover:opacity-100 bg-opacity-95 duration-300'>
                   <PortableText
                     value={project.body}
                     components={RichTextComponents}

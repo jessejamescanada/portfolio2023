@@ -51,7 +51,7 @@ const Contact = () => {
               </div>
               <div className='w-full mt-10'>
                 <textarea
-                  placeholder='Lets chat...'
+                  placeholder='Message...'
                   className='w-full h-[150px] p-2 rounded  shadow-sm  bg-[#ACC1D3] resize-none placeholder-white'
                 ></textarea>
               </div>

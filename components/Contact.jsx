@@ -1,8 +1,14 @@
+'use client'
+import { useForm, ValidationError } from '@formspree/react'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub, AiOutlineTwitter } from 'react-icons/ai'
 import Link from 'next/link'
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm('xbjkpzyr')
+  if (state.succeeded) {
+    return <p>Thanks for the message!</p>
+  }
   return (
     <div
       id='contact'
@@ -32,37 +38,66 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <form
-              action='https://formspree.io/f/xbjkpzyr'
-              method='POST'
-            >
+            <form onSubmit={handleSubmit}>
               <div className='flex flex-col items-center justify-center'>
                 <input
                   type='text'
+                  name='subject'
+                  id='subject'
                   placeholder='Subject...'
                   className='p-2  shadow-sm outline-0 border-b-2 border-amber-500 bg-inherit w-full '
+                />
+                <ValidationError
+                  prefix='Subject'
+                  field='subject'
+                  errors={state.errors}
                 />
               </div>
               <div className='flex justify-between mt-8'>
                 <input
                   type='text'
+                  name='name'
+                  id='name'
                   placeholder='Name...'
                   className='p-2  shadow-sm outline-0 border-b-2 border-amber-500 bg-inherit w-[45%] '
                 />
+                <ValidationError
+                  prefix='Name'
+                  field='name'
+                  errors={state.errors}
+                />
                 <input
                   type='email'
+                  name='email'
+                  id='email'
                   placeholder='Email...'
                   className='p-2  shadow-sm outline-0 border-b-2 border-amber-500 bg-inherit w-[45%] '
+                />
+                <ValidationError
+                  prefix='Email'
+                  field='email'
+                  errors={state.errors}
                 />
               </div>
               <div className='w-full mt-10'>
                 <textarea
+                  name='message'
+                  id='message'
                   placeholder='Message...'
                   className='w-full h-[150px] p-2 rounded  shadow-sm  bg-[#ACC1D3] resize-none placeholder-white'
-                ></textarea>
+                />
+                <ValidationError
+                  prefix='Message'
+                  field='message'
+                  errors={state.errors}
+                />
               </div>
               <div className='flex items-end justify-center sm:justify-end'>
-                <button className='mt-2 py-3 px-4 bg-amber-500 cursor pointer rounded w-[125px] text-gray-50 active:scale-[.98] font-semibold focus:ring-transparent'>
+                <button
+                  type='submit'
+                  disabled={state.submitting}
+                  className='mt-2 py-3 px-4 bg-amber-500 cursor pointer rounded w-[125px] text-gray-50 active:scale-[.98] font-semibold focus:ring-transparent'
+                >
                   Submit
                 </button>
               </div>

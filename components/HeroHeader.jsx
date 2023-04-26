@@ -30,26 +30,11 @@ const HeroHeader = ({ allIcons }) => {
               <div className='text-left w-full  sm:w-[70%] m-0 sm:ml-10 mt-0 lg:mt-8 tracking-wider leading-7'>
                 <h2 className='text-xl font-bold mb-2'>Hey There</h2>
                 <p>
-                  Thanks for visiting! I&apos;m a front end developer with a
-                  focus on
-                  <span className='font-semibold'> React / NextJs</span> and
-                  currently learning backend technologies.
-                  <br />
-                  Please take a look at my{' '}
-                  <a
-                    href='/#projects'
-                    className='cursor-pointer'
-                  >
-                    <span className='font-semibold'>projects </span>
-                  </a>
-                  and read more{' '}
-                  <a
-                    href='/#about'
-                    className='cursor-pointer'
-                  >
-                    <span className='font-semibold'>about me</span>{' '}
-                  </a>
-                  and my experiences.
+                  Thank you for taking the time to visit my page. As a full
+                  stack developer, I specialize in React, Next JS, Prisma, and
+                  Tailwind CSS. Please take a look at my portfolio of projects
+                  listed below to gain further insights into my work and
+                  credentials.
                 </p>
               </div>
             </motion.div>

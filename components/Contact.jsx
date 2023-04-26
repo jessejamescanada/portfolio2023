@@ -1,5 +1,5 @@
 import { AiFillLinkedin } from 'react-icons/ai'
-import { AiFillGithub } from 'react-icons/ai'
+import { AiFillGithub, AiOutlineTwitter } from 'react-icons/ai'
 import Link from 'next/link'
 
 const Contact = () => {
@@ -26,10 +26,16 @@ const Contact = () => {
               >
                 <AiFillLinkedin className='text-4xl text-amber-500' />
               </Link>
+              <Link href={'https://twitter.com/developerjesseg'}>
+                <AiOutlineTwitter className='text-4xl text-amber-500' />
+              </Link>
             </div>
           </div>
           <div>
-            <form>
+            <form
+              action='https://formspree.io/f/xbjkpzyr'
+              method='POST'
+            >
               <div className='flex flex-col items-center justify-center'>
                 <input
                   type='text'

@@ -31,10 +31,10 @@ const HeroHeader = ({ allIcons }) => {
                 <h2 className='text-xl font-bold mb-2'>Hey There</h2>
                 <p>
                   Thank you for taking the time to visit my page. As a full
-                  stack developer, I specialize in React, Next JS, Prisma, and
-                  Tailwind CSS. Please take a look at my portfolio of projects
-                  listed below to gain further insights into my work and
-                  credentials.
+                  stack developer, I specialize in React, Next JS, Prisma,
+                  Sanity.io and Tailwind CSS. Please take a look at my portfolio
+                  of projects listed below to gain further insights into my work
+                  and credentials.
                 </p>
               </div>
             </motion.div>

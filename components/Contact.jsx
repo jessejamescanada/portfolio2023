@@ -7,7 +7,11 @@ import Link from 'next/link'
 const Contact = () => {
   const [state, handleSubmit] = useForm('xbjkpzyr')
   if (state.succeeded) {
-    return <p>Thanks for the message!</p>
+    return (
+      <p className='text-center text-amber-500 text-xl font-bold'>
+        Thanks for the message!
+      </p>
+    )
   }
   return (
     <div

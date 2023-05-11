@@ -33,7 +33,7 @@ const AboutMe = ({ aboutMe }) => {
             />
           </div>
           <a
-            href='public/Jesse_G_Resume.pdf'
+            href='/Jesse_G_Resume.pdf'
             download
           >
             <button className='flex items-center gap-1 bg-amber-400 px-2 py-1 text-white font-semibold rounded-md my-1'>

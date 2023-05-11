@@ -3,6 +3,7 @@ import urlFor from '../lib/urlFor'
 import Image from 'next/image'
 import { PortableText } from '@portabletext/react'
 import RichTextComponents from '../components/RichTextComponents'
+import { AiOutlineDownload } from 'react-icons/ai'
 
 const AboutMe = ({ aboutMe }) => {
   return (
@@ -31,6 +32,14 @@ const AboutMe = ({ aboutMe }) => {
               components={RichTextComponents}
             />
           </div>
+          <a
+            href='public/Jesse_G_Resume.pdf'
+            download
+          >
+            <button className='flex items-center gap-1 bg-amber-400 px-2 py-1 text-white font-semibold rounded-md my-1'>
+              Resume <AiOutlineDownload />
+            </button>
+          </a>
         </div>
       </div>
     </div>
